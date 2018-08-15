@@ -1,7 +1,7 @@
 # tic-tac-toe
 simple implementation of tic tac toe game with AI
 
-#Live Link
+# Live Link
 (<https://www.suhas023.github.io/tic-tac-toe>)
 
 # screenshots

@@ -1,0 +1,139 @@
+html {
+	min-height: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #252525;
+}
+
+.container {
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+td {
+	box-sizing: border-box;
+	border: 10px solid #808080;
+	height: 110px;
+	width: 110px;
+	text-align: center;
+	color: rgb(200,10,70);
+	font-size: 60px;
+	cursor: pointer;
+	font-family: 'Indie Flower', cursive;
+	box-sizing: border-box;
+}
+
+table {
+	border-collapse:  collapse;
+	box-sizing: border-box;
+}
+
+table tr:first-child td {
+	border-top: 0;
+}
+
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+table tr td:first-child {
+	border-left: 0;
+}
+
+table tr td:last-child {
+	border-right: 0;
+}
+
+.endgame {
+	position: absolute;
+	background: rgb(18,18,18,0.9);
+	height: 180px;
+	width: 360px;
+	border-radius: 20px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.startgame {
+	position: absolute;
+	background: rgb(18,18,18,0.9);
+	height: 180px;
+	width: 360px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.x, .o {
+	font-size: 60px;
+	cursor: pointer;
+	background-color: #252525;
+	font-family: 'Indie Flower', cursive;
+	border: 1px solid #808080;
+}
+
+.x {
+	color: #c80a46;
+}
+
+.o {
+	color: #4682b4;
+}
+
+.text {
+	text-align: center;
+	color: #808080;
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+	width: 360px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.replay {
+	height: 45px;
+	font-family: cursive;
+	font-size: 25px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+	td {
+		height: 90px;
+		width: 90px;
+		font-size: 48px;
+	}
+	.endgame, .startgame {
+		width: 280px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

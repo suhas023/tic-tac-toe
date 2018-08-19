@@ -33,8 +33,8 @@ document.querySelector(".o").addEventListener("click", ()=> {
 
 
 replay.addEventListener("click", () => {
-	startGame();
 	document.querySelector(".endgame").style.display = "none";
+	startGame();
 }
 );
 

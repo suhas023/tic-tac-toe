@@ -17,18 +17,20 @@ const replay = document.querySelector(".replay");
 const cells = document.querySelectorAll('.cell');
 const startMenu = document.querySelector('.startgame');
 
-document.querySelector(".x").addEventListener("click", ()=> {
+document.querySelector(".x").addEventListener("click", (e)=> {
 	huPlayer = "X";
 	aiPlayer = "O";
 	startMenu.style.display = "none";
 	startGame();
+	e.stopPropagation();
 });
 
-document.querySelector(".o").addEventListener("click", ()=> {
+document.querySelector(".o").addEventListener("click", (e)=> {
 	huPlayer = "O";
 	aiPlayer = "X"
 	startMenu.style.display = "none";
 	startGame();
+	e.stopPropagation();
 });
 
 
@@ -40,7 +42,7 @@ replay.addEventListener("click", () => {
 
 function startGame() {
 	won = false;
-	origBoard = Array.from(Array(9).keys());
+	origBoard = [0,1,2,3,4,5,6,7,8];
 
 	for(var i = 0; i < cells.length; i++)
 	{
@@ -48,7 +50,7 @@ function startGame() {
 		cells[i].addEventListener("click", turnClick, false);
 	}
 	if(aiPlayer === "X")
-		turn( bestSpot(), "X");
+		turn(Math.floor(Math.random()*9), "X");
 }
 
 

@@ -56,7 +56,7 @@ table tr td:last-child {
 
 .endgame {
 	position: absolute;
-	background: rgb(18,18,18);
+	background: rgb(18,18,18, 0.9);
 	height: 180px;
 	width: 360px;
 	border-radius: 20px;
@@ -68,7 +68,7 @@ table tr td:last-child {
 
 .startgame {
 	position: absolute;
-	background: rgb(18,18,18);
+	background: rgb(18,18,18, 0.9);
 	height: 180px;
 	width: 360px;
 	border-radius: 20px;
@@ -82,6 +82,7 @@ table tr td:last-child {
 	font-size: 60px;
 	cursor: pointer;
 	background-color: #252525;
+	width: 60px;
 	font-family: 'Indie Flower', cursive;
 	border: 1px solid #808080;
 }
@@ -106,7 +107,7 @@ table tr td:last-child {
 
 .replay {
 	height: 45px;
-	font-family: cursive;
+	font-family: 'Indie Flower', cursive;
 	font-size: 25px;
 }
 

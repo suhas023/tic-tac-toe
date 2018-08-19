@@ -68,7 +68,7 @@ table tr td:last-child {
 
 .startgame {
 	position: absolute;
-	background: rgb(18,18,18,0.9);
+	background: rgb(18,18,18);
 	height: 180px;
 	width: 360px;
 	border-radius: 20px;
